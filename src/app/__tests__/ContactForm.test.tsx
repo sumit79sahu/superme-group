@@ -2,6 +2,7 @@ import React from 'react'
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import ContactForm from '../components/ContactForm'
 import '@testing-library/jest-dom'
+import {message} from "antd"
 
 // Mock antd
 jest.mock('antd')
@@ -48,7 +49,7 @@ describe('ContactForm', () => {
     fireEvent.click(screen.getByRole('button', { name: /submit/i }))
 
     await waitFor(() => {
-      const { message } = require('antd')
+      // const { message } = require('antd')
       expect(message.success).toHaveBeenCalledWith('Form submitted successfully')
     })
   })
