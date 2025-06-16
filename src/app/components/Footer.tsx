@@ -49,7 +49,7 @@ const Footer = () => {
             src={logo}
             alt="Supreme Group"
             className="h-[63px] w-auto"
-            priority
+            // priority
           />
         </div>
 
@@ -93,7 +93,7 @@ const Footer = () => {
           align="center"
           className="!text-[rgba(0,0,0,0.7)] text-sm  pt-6 mt-6 gap-y-2"
         >
-          <span>©2024. All Rights Reserved.</span>
+<span data-testid="copyright">©{new Date().getFullYear()} Supreme Group</span>
           <span>Supreme House, 110, 16th Road, Chembur, Mumbai – 400071.</span>
         </Flex>
       </div>

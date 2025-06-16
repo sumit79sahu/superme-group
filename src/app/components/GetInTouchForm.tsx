@@ -51,9 +51,6 @@ const GetInTouchForm = () => {
 
           <div className="mt-1 flex-1 min-w-[290px] ">
             <ContactForm/>
-            {/* <div className="bg-white/10 h-full w-full rounded-lg flex items-center justify-center text-white text-opacity-60 text-sm min-h-[250px]">
-              [Placeholder for form or map]
-            </div> */}
           </div>
         </Flex>
       </div>

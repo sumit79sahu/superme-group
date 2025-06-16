@@ -4,9 +4,11 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="relative lg:h-[100svh] min-h-[450px] oveflow-hidden bg-[rgba(0,106,188,1)]">
+    <section data-testid="stats-section" className="relative lg:h-[100svh] min-h-[450px] oveflow-hidden bg-[rgba(0,106,188,1)]">
       <div className="absolute inset-0">
         <video
+          data-testid="hero-video"
+
           autoPlay
           muted
           loop

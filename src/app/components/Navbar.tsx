@@ -52,7 +52,7 @@ const Navbar = () => {
             src={logo}
             alt="Supreme Group"
             className="h-[35px] w-auto"
-            priority
+            // priority
           />
         </div>
 
@@ -61,10 +61,12 @@ const Navbar = () => {
             Contact Us
           </Button>
           <Button
+          aria-label="LinkedIn"
             icon={<RiLinkedinFill size={20} />}
             className="!py-[20px] !mt-1 !border-none !shadow-none bg-transparent"
           />
           <Button
+          aria-label="ENG"
             icon={<BsTranslate size={20} />}
             className="!py-[20px] !mt-[3px] !border-none !shadow-none bg-transparent text-black !font-semibold text-[12px]"
           >
@@ -74,6 +76,7 @@ const Navbar = () => {
 
         <div className="md:hidden">
           <Button
+aria-label="Mobile Menu"
             type="text"
             icon={ <RiMenu3Line size={22} />}
             onClick={() => setOpen(!open)}
