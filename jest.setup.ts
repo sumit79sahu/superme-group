@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom';
+import React from "react"
 
 // Mock next/router
 jest.mock('next/router', () => ({
@@ -13,13 +14,9 @@ jest.mock('next/router', () => ({
 }));
 
 // Mock next/image
-jest.mock('next/image', () => {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const React = require('react');
-  return {
-    __esModule: true,
-    default: (props: any) => {
-      return React.createElement('img', { ...props });
-    },
-  };
-});
+jest.mock('next/image', () => ({
+  __esModule: true,
+  default: (props: any) => {
+    return React.createElement('img', { ...props });
+  },
+}));
