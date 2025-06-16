@@ -1,3 +1,6 @@
+Live URL: https://superme-group.vercel.app/
+Git Repo URL:https://github.com/sumit79sahu/superme-group
+
 # 📦 Supreme Group Website
 
 A modern, responsive, and accessible website for **Supreme Group**, built with **Next.js**, **TypeScript**, and **Tailwind CSS**. This project integrates **Ant Design** for UI components and includes **comprehensive test coverage** using **Jest** and **React Testing Library**.
