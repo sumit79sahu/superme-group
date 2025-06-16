@@ -93,7 +93,7 @@ const AnimationSection = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 1023px)");
+    const mediaQuery = window.matchMedia("(max-width: 767px)");
 
     const handleResize = () => setIsMobile(mediaQuery.matches);
     handleResize();
