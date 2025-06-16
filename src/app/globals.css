@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+}
+
+
+.ant-drawer-header
+{
+      padding: 21.5px 24px !important;
+}
+
+.ant-input{
+
+    background: #006ABC;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    padding-left: 0;
+    color: white;
+      font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+}
+
+.ant-input::placeholder {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+}
+.ant-input:hover
+{
+      background: #006ABC;
+}
+
+.ant-input:focus
+{
+        background: #006ABC;
+}
+
+.ant-input-outlined.ant-input-status-error
+{
+      background: #006ABC !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 0 !important;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4) !important;
+}
+.ant-drawer .ant-drawer-body 
+{
+  padding: 0 !important;
+}
+
